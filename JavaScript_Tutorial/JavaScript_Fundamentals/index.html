@@ -10,7 +10,7 @@
 	<script src="main.js"></script>
 
 </head>
-<body>
+<body id="body">
 
 	<!-- JavaScript Fundamentals For Beginners -->
 	<!-- https://www.youtube.com/watch?v=vEROU2XtPR8 -->
@@ -23,6 +23,9 @@
 
 <div class="header">
 	<h1>Leaning JavaScript</h1>
+	
+	<h1 id="heading">Button D</h1>
+
 	<p>JavaScript Fundamental</p>
 </div>
 
@@ -32,199 +35,45 @@
 
 <div class="container">
 
+	<button onclick="doClick()">BUTTON HTML</button><br><br>
+
+	<h3 id="time">time</h3>
+	<button onclick="showDate()">Show Date</button><br><br>
+	<button onmouseover="clearDate()">Clear Date</button><br><br>
+	<!-- onload -->
+
+</div>
+
+
+<div class="container">
+	
+	<form method="post" action="something.php" name="myForm">
+	<div>
+		<label>First Name</label>
+		<input type="text" name="firstname" id="firstName" />
+	</div><br>
+	<div>
+		<label>Last Name</label>
+		<input type="text" name="lastname" id="lastName" />
+	</div><br>
+	<div>
+		<label>Background</label>
+		<select name="background" id="backgrounds" onchange="changeBackground(this)">
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+		</select>
+	</div><br>
+	<input type="submit" value="Submit" \>
+
 
 </div>
 
 
 
-
 <script>
-	
 	// alert("Script Tags Work");
-
-	// #############################################################
-	// Variables and Data Structure 
-	// #############################################################
-
-	// Number, String, Array, Object
-
-	var test = "this is a test";
-	var TEST = "THIS IS A TEST";
-	document.write(test + "<br>");
-	document.write(TEST + "<br>" + "<br>");
-
-	// camel case
-	var myFavoriteNumber;
-	// partial case
-	var MyFavoriteNumber;
-	// underscore 
-	var my_favorite_number;
-
-
-	var colors = ["red", "blue", "green"];
-	document.write(colors[0] + "<br>");
-	document.write(colors[1] + "<br>");
-	document.write(colors[2] + "<br>");
-	document.write(colors[3] + "<br>");
-
-	var colors2 = new Array("yellow", "orange");
-	document.write(colors2[0] + "<br>");
-	document.write(colors2[1] + "<br>");
-	document.write(colors2[3] + "<br>" + "<br>");
-
-	document.write(colors + "<br>");
-	document.write(colors2 + "<br>");
-
-	colors.push("purple");
-	document.write(colors + "<br>" + "<br>");
-
-
-	var numbers = [5, 77, 6, "seven", "Seven", 'eight', 1, 55];
-	document.write(numbers + "<br>");
-	document.write(numbers.length + "<br>");
-	document.write(numbers.sort() + "<br>");
-	document.write(numbers.reverse() + "<br>");
-
-
-	// #############################################################
-	// Loops
-	// #############################################################
-
-	console.log("Hello, Console Log");
-	for (var i = 0; i < 10; i++) {
-		// console.log(i);
-	}
-
-	var i = 0;
-	while (i < 10) {
-		// console.log(i);
-		i++;
-	}
-
-	var numbers = [33, 54, 76, 32, 2, 6];
- 
- 	numbers.forEach( function(number){ 
- 		// console.log(number); 
- 	});
- 	numbers.forEach( function(element){ 
- 		// console.log(element); 
- 	});
-
- 	numbers.reverse()
-
-	for (var i = 0; i < numbers.length; i++) {
-		// console.log(numbers[i]);
-	}
-
-
-	// #############################################################
-	// Conditionals
-	// #############################################################
-
-	// === checks data types also
-	if (1 === 1) {
-		console.log("1 === 1");
-	} 
-	var var1 = 3;
-	var var2 = 4;
-	if (var1 == var2 ) {
-		console.log("var1 == var2");
-	} else {
-		console.log("var1 != var2");
-	}
-
-	var fruit = "apple";
-
-	switch(fruit) {
-		case "banana":
-			console.log("banana");
-			break;
-		case "apple":
-			console.log("apple");
-			break;
-		case "grapes":
-			console.log("grape");
-			break;
-		default:
-			console.log("none");
-			break;
-	}
-
-
-	// #############################################################
-	// Object
-	// #############################################################
-
-	// Object Literal
-	// a literal is a notation for representing a fixed value in source code
-
-	var person = {
-		firstName: "Jiho",
-		lastName: "Choi",
-		age: 24,
-		subjects: ["Computer Science", "Math"],
-		address: {
-			street: "1234 Univ St.",
-			city: "West Lafayette",
-			state: "IN"
-		},
-		fullAddress: function() {
-			return this.address.street + " " + this.address.city + " " + this.address.state;
-		}
-	}
-	console.log(person.firstName + " " + person.lastName + " is " + person.age + " years old.");
-	console.log(person.fullAddress);
-	console.log(person.fullAddress());
-
-
-	// Object Constructor
-	var apple = new Object();
-	apple.color = "red";
-	apple.shape = "round";
-
-	apple.describe = function(){
-		return "An apple is the color " + apple.color + " and is the shape " + apple.shape + ".";
-	}
-	console.log(apple.describe());
-
-
-	//  Constructor Pattern
-	function Fruit(name, color, shape) {
-		this.name = name;
-		this.color = color;
-		this.shape = shape;
-
-		this.describe = function() {
-			return "A(n) " + this.name + " is the color " + this.color 
-			+ " and is the shape " + this.shape + ".";
-		}
-	}
-	var apple = new Fruit("apple", "red", "round");
-	var melon = new Fruit("melon", "green", "round");
-	console.log(apple.describe());
-	console.log(melon.describe());
-
-
-	var users = [
-		{
-			name: "John Doe",
-			age: 30
-		},
-		{
-			name: "Jiho Choi",
-			age: 24
-		}
-	];
-
-	console.log(users[0].name);
-	console.log(users[1].name);
-
-
-	// #############################################################
-	// Events
-	// #############################################################
-
-
+	document.write("inside html file");
 
 </script>	
 
