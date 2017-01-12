@@ -92,26 +92,28 @@
 
 	console.log("Hello, Console Log");
 	for (var i = 0; i < 10; i++) {
-		console.log(i);
+		// console.log(i);
 	}
 
 	var i = 0;
 	while (i < 10) {
-		console.log(i);
+		// console.log(i);
 		i++;
 	}
 
 	var numbers = [33, 54, 76, 32, 2, 6];
  
  	numbers.forEach( function(number){ 
- 		console.log(number); 
+ 		// console.log(number); 
  	});
- 	numbers.forEach( function(element){ console.log(element); });
+ 	numbers.forEach( function(element){ 
+ 		// console.log(element); 
+ 	});
 
  	numbers.reverse()
 
 	for (var i = 0; i < numbers.length; i++) {
-		console.log(numbers[i]);
+		// console.log(numbers[i]);
 	}
 
 
@@ -119,10 +121,108 @@
 	// Conditionals
 	// #############################################################
 
-	// check data types also
+	// === checks data types also
 	if (1 === 1) {
-
+		console.log("1 === 1");
 	} 
+	var var1 = 3;
+	var var2 = 4;
+	if (var1 == var2 ) {
+		console.log("var1 == var2");
+	} else {
+		console.log("var1 != var2");
+	}
+
+	var fruit = "apple";
+
+	switch(fruit) {
+		case "banana":
+			console.log("banana");
+			break;
+		case "apple":
+			console.log("apple");
+			break;
+		case "grapes":
+			console.log("grape");
+			break;
+		default:
+			console.log("none");
+			break;
+	}
+
+
+	// #############################################################
+	// Object
+	// #############################################################
+
+	// Object Literal
+	// a literal is a notation for representing a fixed value in source code
+
+	var person = {
+		firstName: "Jiho",
+		lastName: "Choi",
+		age: 24,
+		subjects: ["Computer Science", "Math"],
+		address: {
+			street: "1234 Univ St.",
+			city: "West Lafayette",
+			state: "IN"
+		},
+		fullAddress: function() {
+			return this.address.street + " " + this.address.city + " " + this.address.state;
+		}
+	}
+	console.log(person.firstName + " " + person.lastName + " is " + person.age + " years old.");
+	console.log(person.fullAddress);
+	console.log(person.fullAddress());
+
+
+	// Object Constructor
+	var apple = new Object();
+	apple.color = "red";
+	apple.shape = "round";
+
+	apple.describe = function(){
+		return "An apple is the color " + apple.color + " and is the shape " + apple.shape + ".";
+	}
+	console.log(apple.describe());
+
+
+	//  Constructor Pattern
+	function Fruit(name, color, shape) {
+		this.name = name;
+		this.color = color;
+		this.shape = shape;
+
+		this.describe = function() {
+			return "A(n) " + this.name + " is the color " + this.color 
+			+ " and is the shape " + this.shape + ".";
+		}
+	}
+	var apple = new Fruit("apple", "red", "round");
+	var melon = new Fruit("melon", "green", "round");
+	console.log(apple.describe());
+	console.log(melon.describe());
+
+
+	var users = [
+		{
+			name: "John Doe",
+			age: 30
+		},
+		{
+			name: "Jiho Choi",
+			age: 24
+		}
+	];
+
+	console.log(users[0].name);
+	console.log(users[1].name);
+
+
+	// #############################################################
+	// Events
+	// #############################################################
 
 
 
@@ -134,6 +234,14 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
 
 
 
