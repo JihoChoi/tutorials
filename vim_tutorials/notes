@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+
+
+Set up
+
+	1. location of vimrc in macOS
+		
+		homepath
+		cd ~
+
+
+		/usr/share/vim 
+		.vimrc  
+
+	2. cap lock = ESC
+
+
+
+:!javac Test.java
+
+:!java Test
+
+
+
+:wq
+:q!
+
+
+hjkl	navigate
+
+u	undo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
