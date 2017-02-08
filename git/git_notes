@@ -1,0 +1,31 @@
+git 
+
+
+
+
+
+
+
+
+
+
+	git status
+
+	git pull
+
+
+	git add .
+	git commit -m "des"
+
+
+
+
+	checkout
+
+
+	git checkout [name]
+
+
+	git branch
+
+	git merge
