@@ -42,7 +42,10 @@ u	undo
 
 
 
+i split
 
+:split
+:vsplit
 
 
 
