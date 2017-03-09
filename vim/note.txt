@@ -12,7 +12,7 @@ Jiho Choi's Vim notes
 
 
 
-Vim Setup note
+Vim Setup
 
    vimrc
    bashrc
@@ -22,11 +22,11 @@ Vim Setup note
    macro
 
 
-Vim tutorial note
+Vim tutorial
 
    Modes
 
-   Basic Command
+   Basic
       :w
 
       /
@@ -37,14 +37,14 @@ Vim tutorial note
  
    :
       search
-      replace
+      replae
       undo
       redo
       save
       run command
       tab
 
-   Navigation
+   Navigation Commands
 
       Navigating between lines
 
@@ -92,6 +92,18 @@ u	undo
 
 
 
+vim color
+https://youtu.be/QcOxU1sOOuw
+
+
+http://chriskempson.github.io/base16/
+
+
+:
+
+
+
+
 
 
 
@@ -104,6 +116,13 @@ i split
 
 
 
+Vim Setup
+   Basic
+      number
+
+   Color Scheme
+      
+   Auto Complete
 
 
 
@@ -121,7 +140,6 @@ Vim Navigation Commnads
       M     middle of the screen
       L     bottom of the screen
       80%
-
 
    Shifting Screen
       zt          current line to top
@@ -145,8 +163,7 @@ Vim Navigation Commnads
       #
       n
       N
-
-   
+  
       e     Next word
       w
       W
@@ -154,6 +171,7 @@ Vim Navigation Commnads
       f[p]  forward p
       t
       b
+      :
 
       mm
       \m
