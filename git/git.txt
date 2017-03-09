@@ -4,8 +4,16 @@ git
 
 
 
+branch
+	merge
+
+reverse
 
 
+
+	
+
+git log
 
 
 

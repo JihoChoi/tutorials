@@ -7,6 +7,60 @@
 
 
 
+
+Jiho Choi's Vim notes
+
+
+
+Vim Setup note
+
+   vimrc
+   bashrc
+   zshrc
+
+   remap [caps lock] key to [esc] key
+   macro
+
+
+Vim tutorial note
+
+   Modes
+
+   Basic Command
+      :w
+
+      /
+      ctrl+u
+      yy
+      c
+      p
+ 
+   :
+      search
+      replace
+      undo
+      redo
+      save
+      run command
+      tab
+
+   Navigation
+
+      Navigating between lines
+
+
+      Screen Scrolling
+
+
+
+
+
+
+
+
+
+
+
 Set up
 
 	1. location of vimrc in macOS
@@ -46,6 +100,100 @@ i split
 
 :split
 :vsplit
+
+
+
+
+
+
+
+
+Vim Navigation Commnads
+   Youtube tutorial  https://youtu.be/Qem8cpbJeYc
+
+   Jumping Lines
+      j     moving up
+      k     moving down
+      g     first line of the file
+      G     last line of the file
+      25gg  go to line number 55
+      H     top of the screen 
+      M     middle of the screen
+      L     bottom of the screen
+      80%
+
+
+   Shifting Screen
+      zt          current line to top
+      zz          current line to middle
+      zb          current line to bottom
+      ctrl+y      scroll one line up
+      ctrl+e      scrool one line down
+      ctrl+u      scrool half page up
+      ctrl+d      scroll half-page down
+      ctrl+b      scroll full page up
+      ctrl+f      scroll full page down
+
+   Within A Line
+      0     first char of the line
+      ^     first non blank char of the line
+      $     last non blank char of the line
+      g_    last char of the line
+      
+   Next word
+      *
+      #
+      n
+      N
+
+   
+      e     Next word
+      w
+      W
+      f
+      f[p]  forward p
+      t
+      b
+
+      mm
+      \m
+      'm
+
+      qq  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
