@@ -1,0 +1,17 @@
+
+
+
+// install node.js
+//    -> npm (node.js package manager)
+
+// install express generator using npm
+sudo npm install -g express-generator
+
+
+express [project name]
+
+cd ./[project name]
+
+// install dependecies
+npm install
+
