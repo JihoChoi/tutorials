@@ -2,6 +2,8 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/05-express-first-app" libraries="{basics/05-express-first-app/node_modules}" />
+    <file url="file://$PROJECT_DIR$/06-handlebars" libraries="{basics/06-handlebars/node_modules}" />
+    <file url="file://$PROJECT_DIR$/08-validation-sessions" libraries="{basics/08-validation-sessions/node_modules}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
