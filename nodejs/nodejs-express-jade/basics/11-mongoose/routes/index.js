@@ -18,12 +18,15 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'this is my title', condition1: false, anyArray: [1,2,3] });
 });
 
-router.get('/get-data',function(req, res, next) {
-  UserData.find()
-      .then(function(doc) {
-        res.render('index', {item: doc});
-      })
-});
+router.get(
+    '/get-data',
+    function(req, res, next) {
+      UserData.find()
+          .then(function(doc) {
+            res.render('index', {item: doc});
+          })
+    }
+);
 
 router.post('/insert', function(req, res, next) {
   var item = {
