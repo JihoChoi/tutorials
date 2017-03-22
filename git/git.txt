@@ -1,6 +1,9 @@
 git 
 
 
+git commit --amend
+git checkout
+git reset
 
 
 
